@@ -25,7 +25,9 @@ keystone.init({
 	'auto update': true,
 	'session': true,
 	'auth': true,
-	'user model': 'User'
+	'user model': 'User',
+
+	'cookie secret': 'this is a goddamn cookie secry'
 
 });
 
@@ -89,7 +91,8 @@ keystone.set('email tests', require('./routes/emails'));
 
 keystone.set('nav', {
 	'users': 'users',
-	'products': 'products'
+	'products': 'products',
+	'categories': 'categories'
 });
 
 // Start Keystone to connect to your database and initialise the web server
